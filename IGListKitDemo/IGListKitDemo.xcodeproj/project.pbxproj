@@ -16,6 +16,11 @@
 		22609874227AE35F0068C211 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22609873227AE35F0068C211 /* main.m */; };
 		2260987B227AE3EA0068C211 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 2260987A227AE3EA0068C211 /* Podfile */; };
 		A1FC8451EDA34FD6F4EB01BB /* libPods-IGListKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC4A12234684AE1D6CD197C2 /* libPods-IGListKitDemo.a */; };
+		C9921427227ED33C0069CE51 /* JournalEntryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C9921426227ED33C0069CE51 /* JournalEntryModel.m */; };
+		C992142A227ED71A0069CE51 /* MessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C9921429227ED71A0069CE51 /* MessageModel.m */; };
+		C992142D227ED75A0069CE51 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C992142C227ED75A0069CE51 /* UserModel.m */; };
+		C9921430227EDB1B0069CE51 /* WeatherModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C992142F227EDB1B0069CE51 /* WeatherModel.m */; };
+		C9921434227EF02B0069CE51 /* CustomNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C9921433227EF02B0069CE51 /* CustomNavigationBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +37,16 @@
 		22609873227AE35F0068C211 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2260987A227AE3EA0068C211 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		2C56D54BFCA248A2264D625A /* Pods-IGListKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGListKitDemo.release.xcconfig"; path = "Target Support Files/Pods-IGListKitDemo/Pods-IGListKitDemo.release.xcconfig"; sourceTree = "<group>"; };
+		C9921425227ED33C0069CE51 /* JournalEntryModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JournalEntryModel.h; sourceTree = "<group>"; };
+		C9921426227ED33C0069CE51 /* JournalEntryModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JournalEntryModel.m; sourceTree = "<group>"; };
+		C9921428227ED71A0069CE51 /* MessageModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageModel.h; sourceTree = "<group>"; };
+		C9921429227ED71A0069CE51 /* MessageModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageModel.m; sourceTree = "<group>"; };
+		C992142B227ED75A0069CE51 /* UserModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
+		C992142C227ED75A0069CE51 /* UserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
+		C992142E227EDB1B0069CE51 /* WeatherModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeatherModel.h; sourceTree = "<group>"; };
+		C992142F227EDB1B0069CE51 /* WeatherModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherModel.m; sourceTree = "<group>"; };
+		C9921432227EF02B0069CE51 /* CustomNavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomNavigationBar.h; sourceTree = "<group>"; };
+		C9921433227EF02B0069CE51 /* CustomNavigationBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomNavigationBar.m; sourceTree = "<group>"; };
 		CB5C3CB5F575F3C6A394ED47 /* Pods-IGListKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGListKitDemo.debug.xcconfig"; path = "Target Support Files/Pods-IGListKitDemo/Pods-IGListKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		FC4A12234684AE1D6CD197C2 /* libPods-IGListKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IGListKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -74,6 +89,8 @@
 				22609862227AE35D0068C211 /* AppDelegate.m */,
 				22609864227AE35D0068C211 /* ViewController.h */,
 				22609865227AE35D0068C211 /* ViewController.m */,
+				C9921431227EEF010069CE51 /* Views */,
+				C9921424227ED3160069CE51 /* Models */,
 				22609867227AE35D0068C211 /* Main.storyboard */,
 				2260986D227AE35F0068C211 /* Assets.xcassets */,
 				2260986F227AE35F0068C211 /* LaunchScreen.storyboard */,
@@ -98,8 +115,31 @@
 				CB5C3CB5F575F3C6A394ED47 /* Pods-IGListKitDemo.debug.xcconfig */,
 				2C56D54BFCA248A2264D625A /* Pods-IGListKitDemo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		C9921424227ED3160069CE51 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C9921425227ED33C0069CE51 /* JournalEntryModel.h */,
+				C9921426227ED33C0069CE51 /* JournalEntryModel.m */,
+				C9921428227ED71A0069CE51 /* MessageModel.h */,
+				C9921429227ED71A0069CE51 /* MessageModel.m */,
+				C992142B227ED75A0069CE51 /* UserModel.h */,
+				C992142C227ED75A0069CE51 /* UserModel.m */,
+				C992142E227EDB1B0069CE51 /* WeatherModel.h */,
+				C992142F227EDB1B0069CE51 /* WeatherModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C9921431227EEF010069CE51 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C9921432227EF02B0069CE51 /* CustomNavigationBar.h */,
+				C9921433227EF02B0069CE51 /* CustomNavigationBar.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,9 +240,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				22609866227AE35D0068C211 /* ViewController.m in Sources */,
+				C9921434227EF02B0069CE51 /* CustomNavigationBar.m in Sources */,
 				22609863227AE35D0068C211 /* AppDelegate.m in Sources */,
+				C9921430227EDB1B0069CE51 /* WeatherModel.m in Sources */,
+				C992142D227ED75A0069CE51 /* UserModel.m in Sources */,
 				22609874227AE35F0068C211 /* main.m in Sources */,
+				C9921427227ED33C0069CE51 /* JournalEntryModel.m in Sources */,
 				2260986C227AE35D0068C211 /* IGListKitDemo.xcdatamodeld in Sources */,
+				C992142A227ED71A0069CE51 /* MessageModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
